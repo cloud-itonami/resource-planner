@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "etzhayyim": "https://resources.etzhayyim.com/etzhayyim-project-resources/id/",
+    "schema": "https://schema.org/",
+    "dodaf": "https://resources.etzhayyim.com/etzhayyim-project-resources/id/DM2/"
+  },
+  "@type": "etzhayyim:Project",
+  "@id": "https://resources.etzhayyim.com/etzhayyim-project-resource-planner/id/Project/etzhayyim-project-resource-planner",
+  "schema:name": "etzhayyim-project-resource-planner",
+  "schema:description": "Inngest event-driven resource planner that ingests user/org resources and generates optimal activity resource allocation plans.",
+  "schema:url": "https://rp.etzhayyim.com",
+  "dodaf:capability": [
+    {
+      "@type": "dodaf:Capability",
+      "schema:name": "Resource Ingestion",
+      "schema:description": "Inngest event-driven ingestion of user/org resources (compute, time, contracts, relationships, rights, equipment, social capital) scoped by user_id/org_id."
+    },
+    {
+      "@type": "dodaf:Capability",
+      "schema:name": "Resource Inventory",
+      "schema:description": "NATS KV-backed resource inventory with category summaries, availability tracking, and cost estimation per user/org scope."
+    },
+    {
+      "@type": "dodaf:Capability",
+      "schema:name": "Resource Planning",
+      "schema:description": "Generate optimal resource allocation plans for activity requirements with priority-based allocation, coverage analysis, and unmet requirement detection."
+    },
+    {
+      "@type": "dodaf:Capability",
+      "schema:name": "Inngest Workflow Orchestration",
+      "schema:description": "Async resource lifecycle management via Inngest events (resource/ingested, resource/updated, plan/requested, plan/generated) with durable step functions."
+    }
+  ],
+  "dodaf:performer": [
+    {
+      "@type": "dodaf:Performer",
+      "schema:name": "resource-planner-component",
+      "schema:description": "TinyGo wasm component — performer framework, Connect gRPC-Web API at rp7n3st2.etzhayyim.com/api/grpc, Inngest event emission, NATS KV state"
+    },
+    {
+      "@type": "dodaf:Performer",
+      "schema:name": "resource-planner-ui",
+      "schema:description": "SvelteKit static site at rp.etzhayyim.com — resource dashboard, plan visualization, Inngest event timeline"
+    }
+  ]
+}
