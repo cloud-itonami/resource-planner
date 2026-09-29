@@ -13,7 +13,7 @@ This repository is a migration seed: 11 tracked files extracted verbatim from
 `etzhayyim/root` at `60-apps/etzhayyim-project-resource-planner`, plus
 `README.edn` and `migration.edn`. What is here is the `kotoba/` TypeScript
 implementation — a category taxonomy, an inventory registry, an allocation-plan
-registry, and their validators. Everything else `CLAUDE.md` describes is
+registry, and their validators. Everything else `AGENTS.md` describes is
 elsewhere or nowhere (§4).
 
 Steps marked ✅ were run against this tree on 2026-08-15, Node v26.3.0, npm 11.16.0.
@@ -190,9 +190,9 @@ So read the six as: **validation is tested, confidentiality is not.** Whether to
 fix the test or the mock is a decision for the app's owner; this document names the
 gap and does not resolve it.
 
-## 4. ⚠ `CLAUDE.md` describes a different system ✅
+## 4. ⚠ `AGENTS.md` describes a different system ✅
 
-`CLAUDE.md` documents a Go `performer` component with fourteen RPC methods, Inngest
+`AGENTS.md` documents a Go `performer` component with fourteen RPC methods, Inngest
 step functions, NATS KV key patterns, a `.proto` definition, and a WIT interface.
 Measured in this tree:
 
@@ -212,7 +212,7 @@ dig +short 1.etzhayyim.com    # (nothing)
 
 `MIGRATION-TODO.md` is the accurate document: *"🔄 TRANSFORM — seed copied
 2026-05-21, codemod pending"*, with seven unticked substrate-boundary checkboxes.
-Read it before `CLAUDE.md`, not after.
+Read it before `AGENTS.md`, not after.
 
 **The provenance record is trustworthy**, and is the one thing here that verifies
 exactly:

@@ -6,7 +6,7 @@
  * encrypted-record envelope). Founder directive 2026-06-03: PII / CUI /
  * confidential per-org data may migrate to etzhayyim when made E2E-safe.
  *
- * SPLIT (derived from the actual data surface — CLAUDE.md / PROJECT.jsonld):
+ * SPLIT (derived from the actual data surface — AGENTS.md / PROJECT.jsonld):
  *
  *   PUBLIC (plaintext AT records) — resourceCategory catalog: the open
  *   reference taxonomy (compute / time / contracts / relationships / rights /
